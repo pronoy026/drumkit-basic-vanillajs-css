@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" sizes="16x16">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./script/script.js"></script>
+    <script src="./script/modal.js"></script>
+    <title>DrumKit</title>
+</head>
+
+<body>
+    <div class="control">
+        <button class="btn" id="k"><img class="modal-content" src="./favicon.ico">See controls</button>
+    </div>
+    <div class="container">
+        <img src="./img/Drum-Kit.jpg" alt="none">
+        <div data-beat="65" class="dot position1"></div>
+        <div data-beat="83" class="dot position2"></div>
+        <div data-beat="68" class="dot position3"></div>
+        <div data-beat="70" class="dot position4"></div>
+        <div data-beat="71" class="dot position5"></div>
+        <div data-beat="72" class="dot position6"></div>
+        <div data-beat="74" class="dot position7"></div>
+    </div>
+
+    <audio data-beat="65" src="./sounds/beat1.mp3"></audio>
+    <audio data-beat="83" src="./sounds/beat2.mp3"></audio>
+    <audio data-beat="68" src="./sounds/beat3.mp3"></audio>
+    <audio data-beat="70" src="./sounds/beat4.mp3"></audio>
+    <audio data-beat="71" src="./sounds/beat5.mp3"></audio>
+    <audio data-beat="72" src="./sounds/beat6.mp3"></audio>
+    <audio data-beat="74" src="./sounds/beat7.mp3"></audio>
+
+    <!-- The Modal -->
+    <div id="controlsModal" class="modal">
+        <span class="close" id="closeButton">&times;</span>
+        <img class="modal-content" src="./img/controls.png" id="imgc">
+    </div>
+</body>
+
+</html>
